@@ -2,4 +2,4 @@
 *.log
 project/target/*
 target/*
-src/main/scala/hive/scala/udtf/ExpandTree2UDTF.scala
+ExpandTree2UDTF.scala
