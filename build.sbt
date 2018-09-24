@@ -3,7 +3,7 @@ import Dependencies._
 lazy val root = (project in file(".")).
   settings(
     inThisBuild(List(
-      organization := "jp.gr.java_conf.hangedman",
+      organization := "hive.scala.udtf",
       scalaVersion := "2.12.2",
       version      := "0.1.0-SNAPSHOT"
     )),
@@ -11,7 +11,7 @@ lazy val root = (project in file(".")).
     libraryDependencies += "org.apache.hive" % "hive-exec" % "2.1.1",
     libraryDependencies += scalaTest % Test,
     resolvers += "Spring Plugins" at "http://repo.spring.io/plugins-release/",
-    mainClass in assembly := Some("jp.gr.java_conf.hangedman.ExpandTree3UDTF"),
+    mainClass in assembly := Some("hive.scala.udtf.ExpandTree3UDTF"),
     assemblyJarName in assembly := "hive-udtf.jar"
   )
 
